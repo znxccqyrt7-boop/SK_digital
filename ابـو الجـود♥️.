@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK DIGITAL | خدمات إلكترونية</title>
+    <style>
+        :root {
+            --bg-color: #090d16;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --accent-color: #6366f1;
+            --accent-gradient: linear-gradient(135deg, #6366f1, #8b5cf6);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 40%);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 450px;
+            padding: 25px 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .logo-box {
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 15px;
+            background: var(--accent-gradient);
+            border-radius: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+            box-shadow: 0 15px 30px rgba(99, 102, 241, 0.3);
+        }
+        h1 {
+            font-size: 26px;
+            margin: 10px 0 5px;
+            letter-spacing: 0.5px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.15);
+            color: #818cf8;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            border: 1px solid rgba(99, 102, 241, 0.3);
+        }
+        p.bio {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .section-title {
+            text-align: right;
+            font-size: 15px;
+            color: var(--text-muted);
+            margin: 20px 5px 10px;
+            font-weight: 600;
+        }
+        .service-card {
+            display: flex;
+            align-items: center;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 14px 18px;
+            margin: 10px 0;
+            border-radius: 16px;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            text-align: right;
+        }
+        .service-card:hover {
+            background: rgba(99, 102, 241, 0.1);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .service-icon {
+            font-size: 22px;
+            margin-left: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            flex-shrink: 0;
+        }
+        .service-info {
+            flex-grow: 1;
+        }
+        .service-info h3 {
+            margin: 0 0 3px;
+            font-size: 15px;
+            color: var(--text-main);
+        }
+        .service-info span {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .main-btn {
+            display: block;
+            background: var(--accent-gradient);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+            transition: 0.3s;
+        }
+        .main-btn:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-box">SK</div>
+        <h1>SK DIGITAL</h1>
+        <div class="badge">منصة خدمات إلكترونية عراقية</div>
+        <p class="bio">نقدم حلول رقمية متكاملة، تصميم مواقع، أنظمة إدارية، وتطوير برمجيات بخبرة واحترافية عالية.</p>
+
+        <div class="section-title">خدماتنا الرئيسية</div>
+
+        <a href="https://t.me/" class="service-card" target="_blank">
+            <div class="service-icon">🌐</div>
+            <div class="service-info">
+                <h3>تصميم مواقع إلكترونية</h3>
+                <span>مواقع هبوط، متاجر، وواجهات عصرية</span>
+            </div>
+        </a>
+
+        <a href="https://t.me/" class="service-card" target="_blank">
+            <div class="service-icon">📱</div>
+            <div class="service-info">
+                <h3>أنظمة QR للمطاعم والشركات</h3>
+                <span>منيو إلكتروني تفاعلي متطور</span>
+            </div>
+        </a>
+
+        <a href="https://t.me/" class="service-card" target="_blank">
+            <div class="service-icon">🎨</div>
+            <div class="service-info">
+                <h3>تصميم هويات وشعارات</h3>
+                <span>هوية بصرية كاملة تناسب مشروعك</span>
+            </div>
+        </a>
+
+        <a href="https://t.me/" class="service-card" target="_blank">
+            <div class="service-icon">⚙️</div>
+            <div class="service-info">
+                <h3>برمجة أنظمة إدارية</h3>
+                <span>لوحات تحكم وحسابات مستخدمين</span>
+            </div>
+        </a>
+
+        <a href="https://t.me/" class="main-btn" target="_blank">💬 تواصل معنا لطلب خدمة</a>
+
+        <div class="footer">جميع الحقوق محفوظة © SK DIGITAL 2026</div>
+    </div>
+</body>
+</html>
